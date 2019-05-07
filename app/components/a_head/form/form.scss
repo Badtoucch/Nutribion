@@ -1,0 +1,154 @@
+.form {
+  position: relative;
+  padding: 34px 22px 15px;
+  background-color: #fff;
+  border: 3px solid #9fcc3a;
+  border-radius: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -26px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #228520;
+    background-image: url("../img/clock.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    position: absolute;
+    top: 118px;
+    right: -28px;
+    width: 42px;
+    height: 228px;
+    background-image: url("../img/arrow-form.svg");
+    background-position: top left;
+    background-repeat: no-repeat;
+
+    @include rm(1250) {
+      content: "";
+    }
+  }
+
+  &--bottom::after {
+    right: -36px;
+    width: 55px;
+    height: 294px;
+    background-size: contain;
+  }
+}
+
+.form__caption {
+  margin: 0;
+  margin-bottom: 12px;
+  position: relative;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+
+.form__timer {
+  margin-top: 11px;
+  margin-bottom: 19px;
+  padding-top: 17px;
+}
+
+.form__order {
+  margin-top: 9px;
+  margin-bottom: 20px;
+}
+
+.form__lastpack {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+
+.form__fields {
+  margin-top: 18px;
+}
+
+.form__field {
+  position: relative;
+  margin: 0;
+
+  & + & {
+    margin-top: 16px;
+  }
+}
+
+.form__icon {
+  position: absolute;
+
+  &--name {
+    top: 16px;
+    left: 21px;
+  }
+
+  &--phone {
+    top: 17px;
+    left: 20px;
+  }
+}
+
+.form__input {
+  width: 100%;
+  min-height: 58px;
+  padding-left: 50px;
+  font-size: 16px;
+  border: 1px solid #dedddd;
+  border-radius: 5px;
+
+  &::placeholder {
+    color: #666666;
+    font-size: 16px;
+  }
+
+  &:focus {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1) inset;
+  }
+
+  &:focus::placeholder {
+    color: $transparent;
+  }
+}
+
+.form__bottom {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.form__note {
+  margin-bottom: 14px;
+  padding-top: 2px;
+  padding-bottom: 11px;
+  color: #6c6c6c;
+  font-size: 15px;
+  line-height: 1;
+  border-bottom: 1px solid #dedddd;
+}
+
+.form__about {
+  display: flex;
+  align-items: center;
+  padding-left: 7px;
+  
+  & img {
+    margin-right: 9px;
+  }
+  
+  & span {
+    font-size: 15px;
+  }
+}
+
+@import './price';
+@import './timer';

@@ -1,9 +1,9 @@
 =r($width)
-	@media screen and (max-width:$width+"px")
+	@media screen and (max-width: ($width + 0.98) +"px")
 		@content
 
 =rm($width)
-	@media screen and (min-width:$width+"px")
+	@media screen and (min-width: $width+"px")
 		@content
 
 @mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false )
@@ -18,3 +18,9 @@
 		@else
 			src: url('#{$file-path}.eot')
 			src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype')
+
+@mixin block-bg($L-left, $L-top, $R-top, $R-right)
+	background-color: #e4f1ef
+	background-image: url("../img/pattern-figures-01.png"), url("../img/pattern-figures-02.png"), url("../img/pattern-noise.png")
+	background-position: top $L-left left $L-top, top $R-top right $R-right, top center
+	background-repeat: no-repeat, no-repeat, repeat

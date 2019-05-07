@@ -1,0 +1,108 @@
+.popup__inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 770px;
+  padding: 43px 25px 30px 13px;
+  background-color: #e4f1ef;
+  background-image: url("../img/pattern-noise.png");
+  border-radius: 5px;
+
+  @include r(767) {
+    padding: 43px 20px 30px;
+  }
+
+  @include rm(1250) {
+    padding: 43px 62px 30px 13px;
+  }
+}
+
+.popup__content {
+  @include r(767) {
+    display: none;
+  }
+}
+
+.popup__logo {
+  display: flex;
+  margin-top: -10px;
+  margin-left: 78px;
+  margin-bottom: 29px;
+  color: #444444;
+  font-size: 17px;
+  line-height: (18 / 17);
+
+  & img {
+    flex-shrink: 0;
+  }
+
+  & span {
+    display: inline-block;
+    margin-top: 38px;
+    margin-left: 19px;
+  }
+}
+
+.popup__pictures {
+  position: relative;
+  width: 398px;
+  flex-shrink: 0;
+  margin-right: 27px;
+
+  & img {
+    display: block;
+  }
+}
+
+.popup__sea-buckthorn {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+}
+
+.popup__pack {
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+}
+
+.popup__form {
+  max-width: 270px;
+}
+
+.ever-popup__close {
+  top: 42px !important;
+  right: 10px !important;
+  width: 30px !important;
+  height: 30px !important;
+  transform: rotate(45deg) !important;
+  cursor: pointer !important;
+  
+  @include rm(1250) {
+    top: 51px !important;
+    right: 17px !important;
+  }
+
+  &::before,
+  &::after {
+    top: 50% !important;
+    left: 50% !important;
+    width: 30px !important;
+    height: 3px !important;
+    background-color: #fb7101 !important;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) !important;
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(90deg) !important;
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: #fb3601 !important;
+  }
+}

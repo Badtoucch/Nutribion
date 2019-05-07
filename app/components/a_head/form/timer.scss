@@ -1,0 +1,48 @@
+.timer {
+  position: relative;
+  color: black;
+  border-top: 1px solid #d1d0d0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4.5px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border: 1px solid #d1d0d0;
+    border-top-color: white;
+    border-left-color: white;
+    transform: translateX(-50%) rotate(45deg);
+  }
+}
+
+.timer__caption {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: (22 / 20);
+  text-align: center;
+}
+
+.timer__body {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.timer__cell {
+  width: 50px;
+  flex-shrink: 0;
+  line-height: 50px;
+  text-align: center;
+  background-color: #e3f2f1;
+  border-radius: 50%;
+}
+
+.timer__separator {
+  padding: 0 6px;
+  line-height: 50px;
+}
