@@ -1,0 +1,157 @@
+.reason
+	padding-top: 80px
+	padding-bottom: 63px
+	+r(1189)
+		padding-bottom: 25px
+	.title
+		+r(1023)
+		 br
+			 display: none
+	&-content
+		margin-top: 41px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		+r(1189)
+			margin-top: 30px
+		+r(1023)
+			margin-top: 20px
+		+r(767)
+			margin-top: 15px
+		+r(479)
+			justify-content: center
+	&-box
+		width: 31.63%
+		&:nth-child(1),&:nth-child(3)
+			position: relative
+			top: 70px
+			height: 100%
+			+r(1023)
+				top: 0
+		+r(1023)
+			margin-bottom: 15px
+		+r(767)
+			width: 49%
+		+r(479)
+			width: 340px
+		&:nth-child(5),&:nth-child(7)
+			position: relative
+			top: -70px
+			height: 100%
+			+r(1023)
+				top: 0
+		&__img
+			position: relative
+			&:before
+				content: '1'
+				position: absolute
+				bottom: -22px
+				left: 50%
+				transform: translateX(-50%)
+				height: 58px
+				width: 70px
+				border-radius: 5px
+				background-color: #ffffff
+				color: #fb9a01
+				font-size: 40px
+				font-weight: 900
+				line-height: 1
+				display: flex
+				justify-content: center
+				align-items: center
+				+r(1189)
+					bottom: -17px
+					height: 50px
+					font-size: 36px
+				+r(1023)
+					font-size: 30px
+					height: 42px
+					width: 55px
+					bottom: -9px
+			img
+				border-radius: 4px
+		&__text
+			color: #444444
+			font-weight: 400
+			font-size: 22px
+			line-height: 28px
+			text-align: center
+			margin-top: 21px
+			+r(1189)
+				font-size: 20px
+				line-height: 26px
+				margin-top: 15px
+			+r(1023)
+				font-size: 18px
+				line-height: normal
+				margin-top: 6px
+				br
+					display: none
+			+r(639)
+				font-size: 17px
+	&-question
+		margin-left: 34%
+		margin-right: 34%
+		width: 370px
+		border-radius: 50px
+		background-color: #feebeb
+		height: 110px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		margin-bottom: 48px
+		margin-top: 15px
+		+r(1023)
+			order: 7
+			width: 100%
+			margin-right: 0
+			margin-left: 0
+			height: 100%
+			padding: 10px
+			margin: 5px 0 0
+		+r(767)
+			border-radius: 20px
+		&__title
+			color: #000000
+			font-family: Roboto
+			font-size: 22px
+			font-weight: 700
+			line-height: normal
+			text-align: center
+			+r(1189)
+				font-size: 20px
+			+r(639)
+				font-size: 18px
+		&__subtitle
+			color: #444444
+			font-family: Roboto
+			font-size: 18px
+			font-style: italic
+			line-height: 22px
+			text-align: center
+			margin-top: 3px
+			+r(1189)
+				font-size: 17px
+				line-height: normal
+			+r(1023)
+				br
+					display: none
+			+r(639)
+				font-size: 16px
+
+.item2
+	&:before
+		content: '2'
+.item3
+	&:before
+		content: '3'
+.item4
+	&:before
+		content: '4'
+.item5
+	&:before
+		content: '5'
+.item6
+	&:before
+		content: '6'
