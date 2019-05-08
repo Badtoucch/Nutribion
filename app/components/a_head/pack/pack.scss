@@ -1,0 +1,39 @@
+.pack {
+  width: 435px;
+  height: 404px;
+
+  @include r(479) {
+    width: 290px;
+  }
+}
+
+.pack__seaberry {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 73px;
+
+  @include r(479) {
+    display: none;
+  }
+}
+
+.pack__pack {
+  position: absolute;
+  z-index: 2;
+  bottom: 6px;
+  right: 50px;
+  max-width: 295px;
+
+  @include r(479) {
+    right: 20px;
+  }
+}
+
+.pack__bottle {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  right: 0;
+  max-width: 130px;
+}

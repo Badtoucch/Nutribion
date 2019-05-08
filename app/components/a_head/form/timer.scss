@@ -1,9 +1,9 @@
 .timer {
   position: relative;
   color: black;
-  border-top: 1px solid #d1d0d0;
+  // border-top: 1px solid #d1d0d0;
 
-  &::before {
+  /* &::before {
     content: "";
     position: absolute;
     top: -4.5px;
@@ -15,6 +15,21 @@
     border-top-color: white;
     border-left-color: white;
     transform: translateX(-50%) rotate(45deg);
+  } */
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 222px;
+    height: 6px;
+    background-image: url("../img/timer-separator.svg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 222px 6px;
+    transform: translateX(-50%);
   }
 }
 

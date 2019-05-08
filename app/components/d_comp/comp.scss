@@ -1,0 +1,267 @@
+.comp {
+  padding: 122px 0 100px;
+
+  @include r(1189) {
+    padding: 60px 0 50px;
+  }
+}
+
+.comp__title {
+  max-width: 570px;
+  margin: 0 auto 32px;
+  text-align: center;
+
+  @include r(1189) {
+    margin: 0 auto 15px;
+  }
+
+  @include r(1023) {
+    margin: 0 auto 20px;
+  }
+}
+
+.comp__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+
+  @include r(1189) {
+    justify-content: space-around;
+    margin-bottom: 35px;
+  }
+
+  @include r(1023) {
+    display: block;
+  }
+}
+
+.comp__item {
+  position: relative;
+  padding-top: 183px;
+
+  @include r(1023) {
+    padding-top: 0;
+  }
+
+  & + & {
+    @include r(1023) {
+      margin-top: 15px;
+    }
+  }
+
+  & + &::before {
+    content: "";
+    position: absolute;
+    top: 149px;
+    left: -67px;
+    width: 108px;
+    height: 34px;
+    background-image: url("../img/comp-separator.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    @include r(1189) {
+      left: -62px;
+    }
+
+    @include r(1023) {
+      content: none;
+    }
+  }
+}
+
+.comp__card {
+  width: 270px;
+  min-height: 606px;
+  margin: 0 auto;
+  padding-top: 201px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 35px 0px transparentize(#545454, 0.8);
+
+  @include r(1189) {
+    width: 240px;
+    min-height: 460px;
+    padding-top: 125px;
+  }
+
+  @include r(1023) {
+    display: flex;
+    width: auto;
+    min-height: auto;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+
+.comp__picture {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 223px;
+  transform: translateX(-50%);
+
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @include r(1189) {
+    max-width: 75%;
+  }
+
+  @include r(1023) {
+    position: static;
+    display: flex;
+    width: 150px;
+    flex-shrink: 0;
+    transform: none;
+    overflow: hidden;
+
+    & img {
+      position: relative;
+      left: 20px;
+      align-self: center;
+    }
+  }
+
+  @include r(479) {
+    width: 100px;
+
+    & img {
+      left: 10px;
+    }
+  }
+
+  &--seaberry {
+    left: 63%;
+  }
+
+  &--lycium {
+    left: 61%;
+  }
+
+  &--ginger {
+    left: 62%;
+  }
+
+  &--tea {
+    left: 60%;
+  }
+}
+
+.comp__text {
+  position: relative;
+  padding: 27px 32px 5px;
+  color: #444444;
+  font-size: 18px;
+  border-top: 1px solid #e0e0e0;
+  background-image: url("../img/pattern-noise.png");
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    width: 30px;
+    height: 5px;
+    background-color: #9fcc3a;
+    transform: translateX(-50%);
+
+    @include r(1023) {
+      top: 50%;
+      left: -3px;
+      width: 5px;
+      height: 30px;
+      transform: translateY(-50%);
+    }
+  }
+
+  @include r(1189) {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  @include r(479) {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  @include r(1023) {
+    flex-grow: 1;
+    border-top: none;
+    border-left: 1px solid #e0e0e0;
+  }
+}
+
+.comp__caption {
+  margin: 0;
+  margin-bottom: 14px;
+  color: black;
+  font-size: 1.22em;
+  font-weight: 700;
+  line-height: (24 / 22);
+
+  @include r(1189) {
+    margin-bottom: 10px;
+  }
+}
+
+.comp__adv {
+  font-size: 1em;
+  line-height: (22 / 18);
+
+  & li {
+    position: relative;
+    padding-left: 17px;
+
+    &::before {
+      content: "—";
+      position: absolute;
+      top: 0;
+      left: -2px;
+    }
+  }
+
+  & li + li {
+    margin-top: 24px;
+
+    @include r(1189) {
+      margin-top: 15px;
+    }
+  }
+}
+
+.comp__note {
+  max-width: 970px;
+  min-height: 90px;
+  margin: 0 auto;
+  padding: 19px 85px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: (26 / 24);
+  text-align: center;
+  background-color: $bg-accent;
+  border-radius: 45px / 50%;
+
+  @include r(1189) {
+    font-size: 22px;
+  }
+
+  @include r(1023) {
+    min-height: auto;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 20px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @include r(479) {
+    font-size: 18px;
+  }
+}
