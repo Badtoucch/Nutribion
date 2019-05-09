@@ -1,0 +1,138 @@
+.order
+	padding-top: 0 !important
+	padding-bottom: 100px
+	+r(1189)
+		padding-bottom: 60px
+	&-content
+		display: flex
+		justify-content: center
+		margin-top: 55px
+		position: relative
+		+r(1189)
+			margin-top: 35px
+		+r(1023)
+			margin-top: 10px
+		+r(767)
+			margin-top: 5px
+		+r(639)
+			flex-wrap: wrap
+		&:before
+			content: ''
+			position: absolute
+			left: 7.1%
+			top: -13.8%
+			background: url(../img/arrow-order.svg) no-repeat center
+			height: 220px
+			width: 768px
+			+r(1189)
+				left: 1.2%
+				top: -13.2%
+				background-size: 90%
+			+r(1023)
+				display: none
+	&-box
+		width: 27.4%
+		+r(1189)
+			width: 30%
+		+r(1023)
+			width: 32%
+		+r(639)
+			width: 220px
+			margin: 0 5px !important
+		&:not(:last-child)
+			margin-bottom: 10px !important
+		&:nth-child(2)
+			margin: 0 6.6%
+			+r(1023)
+				margin: 0 4.6%
+			+r(767)
+				margin: 0 2%
+			+r(639)
+				margin: 0
+		&:nth-child(2n+1)
+			margin-top: 30px
+			+r(1023)
+				margin-top: 0
+		&__count
+			color: #f1f8f7
+			font-size: 200px
+			font-weight: 900
+			line-height: 145px
+			text-align: right
+			position: relative
+			+r(1189)
+				font-size: 180px
+			+r(1023)
+				font-size: 160px
+			&:before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 0
+				transform: translateY(-50%)
+				width: 102px
+				height: 102px
+				border-radius: 50%
+				+r(1189)
+					width: 90px
+					height: 90px
+					background-size: contain !important
+				+r(1023)
+					width: 80px
+					height: 80px
+				+r(767)
+					width: 70px
+					height: 70px
+		&__text
+			color: #000000
+			font-size: 22px
+			font-weight: 700
+			line-height: normal
+			text-align: center
+			padding-top: 25px
+			position: relative
+			margin-top: 30px
+			+r(1189)
+				font-size: 20px
+				margin-top: 25px
+				padding-top: 20px
+			+r(1023)
+				font-size: 18px
+				margin-top: 5px
+				padding-top: 10px
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 50%
+				transform: translate(-50%)
+				width: 30px
+				height: 5px
+				background-color: #9fcc3a
+	&-count1
+		padding-right: 4px
+		+r(1023)
+			padding-right: 0
+		&:before
+			background: url(../img/order-1.jpg) no-repeat center
+			left: 20px
+			+r(1023)
+				left: 0
+	&-count2
+		padding-right: 15px
+		+r(1023)
+			padding-right: 0
+		&:before
+			background: url(../img/order-2.jpg) no-repeat center
+			left: 10px
+			+r(1023)
+				left: 0
+	&-count3
+		padding-right: 11px
+		+r(1023)
+			padding-right: 0
+		&:before
+			background: url(../img/order-3.jpg) no-repeat center
+			left: 13px
+			+r(1023)
+				left: 0

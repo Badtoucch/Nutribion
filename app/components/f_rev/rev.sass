@@ -1,2 +1,508 @@
+.rev
+	padding: 90px 0 100px
+	+r(1189)
+		padding: 40px 0 60px
+	&-subtitle
+		color: #444444
+		font-size: 24px
+		font-weight: 400
+		line-height: normal
+		text-align: center
+		margin-bottom: 15px
+		+r(1189)
+			font-size: 22px
+			margin-bottom: 10px
+		+r(1023)
+			font-size: 20px
+			margin-bottom: 5px
+		+r(767)
+			font-size: 18px
+			margin-bottom: 0
+	&-content
+		margin-top: 40px
+		+r(1300)
+			max-width: 1006px
+			margin-right: auto
+			margin-left: auto
+		+r(1189)
+			margin-top: 30px
+			max-width: 900px
+		+r(1023)
+			margin-top: 0px
+			max-width: 100%
+		+r(479)
+			max-width: 320px
+		+r(400)
+			max-width: 300px
+	&-box
+		display: flex
+		flex-direction: column
+		align-items: center
+		box-shadow: 0 0 15px rgba(84, 84, 84, 0.2)
+		border-radius: 5px
+		background-color: #ffffff
+		border-top: 3px solid #fb9a01
+		padding-bottom: 40px
+		position: relative
+		margin-bottom: 100px
+		width: 370px
+		transition: 0.5s
+		+r(1300)
+			width: 320px
+			box-shadow: 0 0 10px rgba(84, 84, 84, 0.2)
+		+r(1189)
+			width: 285px
+			padding-bottom: 30px
+		&-top
+			background: url(../img/pattern-noise.png) repeat
+			height: 100%
+			width: 100%
+			padding-bottom: 20px
+			border-bottom: 1px solid #e0e0e0
+			position: relative
+			+r(1023)
+				padding-bottom: 15px
+			&:before
+				content: ''
+				position: absolute
+				bottom: -3px
+				left: 50%
+				transform: translate(-50%)
+				width: 30px
+				height: 5px
+				background-color: #9fcc3a
+		&__avatar
+			border-radius: 4px
+			position: relative
+			top: -50px
+			margin-bottom: -50px
+			display: flex
+			justify-content: center
+		&__name
+			color: #000000
+			font-size: 22px
+			font-weight: 700
+			line-height: normal
+			text-align: center
+			margin-top: 15px
+			+r(1189)
+				font-size: 21px
+			+r(1023)
+				font-size: 20px
+				margin-top: 10px
+		&__city
+			color: #444444
+			font-size: 18px
+			font-style: italic
+			line-height: normal
+			text-align: center
+			+r(1023)
+				font-size: 17px
+		&__thesis
+			color: #000000
+			font-size: 22px
+			font-weight: 500
+			line-height: 28px
+			text-align: center
+			margin-top: 24px
+			padding: 0 20px
+			+r(1189)
+				font-size: 19px
+				line-height: normal
+				margin-top: 20px
+			+r(1023)
+				font-size: 18px
+				margin-top: 10px
+		&__text
+			color: #444444
+			font-size: 18px
+			font-weight: 400
+			line-height: 28px
+			text-align: center
+			padding: 0 33px
+			margin-top: 10px
+			+r(1300)
+				padding: 0 20px
+			+r(1189)
+				padding: 0 14px
+				line-height: normal
+				font-size: 18px
+			+r(1023)
+				font-size: 17px
+				margin-top: 5px
+				br
+					display: none
+		&__body
+			max-height: 337px
+			overflow: hidden
+			transition: .5s
+			+r(1189)
+				max-height: 318px
+			+r(1023)
+				max-height: 240px
+		&__btn
+			position: absolute
+			bottom: -18.5px
+			left: 50%
+			transform: translate(-50%)
+			width: 39px
+			height: 39px
+			background-color: #9fcc3a
+			border-radius: 50%
+			box-shadow: 2px 2.2px 0 0 #6ba423
+			transition: .5s
+			&:hover
+				background-color: #8ab629
+				box-shadow: 2px 2.2px 0 0 #5a8d1a
+		&__plus
+			width: 100%
+			height: 100%
+			cursor: pointer
+			&:before, &:after
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-49%, -50%)
+				width: 16px
+				height: 2px
+				background-color: #fff
+				transition: .5s
+			&:after
+				transform: translate(-49%, -50%) rotate(-90deg)
+	&-comment
+		margin-top: 86px
+		color: #444444
+		text-align: center
+		font-size: 18px
+		font-style: italic
+		line-height: 22px
+		+r(1189)
+			margin-top: 65px
+			line-height: normal
+		+r(1023)
+			font-size: 17px
+			margin-top: 50px
+		+r(767)
+			font-size: 16px
+			margin-top: 45px
+	&-feedback
+		color: #444444
+		font-family: Roboto
+		font-size: 22px
+		font-weight: 400
+		line-height: 28px
+		text-align: center
+		+r(1189)
+			font-size: 20px
+			line-height: normal
+		+r(1023)
+			font-size: 19px
+		+r(639)
+			font-size: 19px
+		span
+			display: block
+			font-weight: 700
+			font-size: 26px
+			+r(1189)
+				font-size: 24px
+			+r(1023)
+				font-size: 23px
+			+r(639)
+				display: inline
+				font-size: 19px
+	&-line
+		background-color: #e0e0e0
+		height: 1px
+		max-width: 790px
+		display: block
+		margin: 30px auto
+		+r(1189)
+			margin: 25px auto
+		+r(1023)
+			margin: 20px auto
+		+r(639)
+			margin: 15px auto
+	&__review
+		display: flex
+		justify-content: center
+		margin-top: 21px
+		border-radius: 50px
+		background-color: #e4f1ef
+		padding: 18px 0
+		+r(1023)
+			flex-wrap: wrap
+			max-width: 540px
+			border-radius: 10px
+			margin-right: auto
+			margin-left: auto
+			flex-direction: column
+			padding: 15px 15px 19px
+		+r(639)
+			margin-top: 15px
+			padding: 10px 10px 14px
+	.form__fields
+		display: flex
+		margin-top: 0
+		+r(639)
+			flex-direction: column
+	.form__field+.form__field
+		margin-top: 0
+	.button
+		margin: 0
+		height: 61px
+		+r(1023)
+			margin-top: 10px
+			width: 100%
+			max-width: 100%
+			height: 57px
+	.form__input
+		width: 240px
+		height: 65px
+		border-radius: 5px
+		background-color: #ffffff
+		margin-right: 15px
+		+r(1189)
+			width: 200px
+			margin-right: 10px
+			padding-left: 40px
+		+r(1023)
+			width: 250px
+			height: 60px
+		+r(639)
+			width: 100%
+			margin-bottom: 10px
+			margin-right: 0
+	.input__text
+		width: 370px
+		padding-left: 25px
+		+r(1189)
+			width: 300px
+			padding-left: 20px
+		+r(1023)
+			width: 510px
+			margin-top: 10px
+			margin-right: 0
+			padding-left: 13px
+		+r(639)
+			margin-top: 0
+			width: 100%
+			margin-bottom: 0
+	.form__icon--phone
+		top: 20px
+		+r(1189)
+			left: 14px
+		+r(1023)
+			top: 18px
+	.form__icon--name
+		top: 19px
+		+r(1189)
+			left: 14px
+		+r(1023)
+			top: 17px
+.slider-box
+	position: relative
+
+.slick-arrow
+	position: absolute
+	top: 330px
+	cursor: pointer
+	transition: .5s
+	+r(1023)
+		top: 200px
+	+r(479)
+		display: none !important
+
+.prev
+	left: -80px
+	fill: #bed9d5
+	+r(1350)
+		left: -60px
+	+r(1300)
+		left: 15px
+	+r(1189)
+		left: -4px
+	+r(1023)
+		left: 15px
+	+r(639)
+		left: 50px
+	+r(479)
+		left: 35px
+	+r(400)
+		left: 20px
+	&:hover, &:focus, &:active
+		fill: #228520
+.next
+	right: -80px
+	fill: #bed9d5
+	+r(1350)
+		right: -60px
+	+r(1300)
+		right: 15px
+	+r(1189)
+		right: -4px
+	+r(1023)
+		right: 15px
+	+r(639)
+		right: 50px
+	+r(479)
+		right: 35px
+	+r(400)
+		right: 20px
+	&:hover, &:focus, &:active
+		fill: #228520
+
+.slick-slide
+	outline: 0
+	margin: 80px 15px 25px
+	+r(1300)
+		margin: 80px 10px 25px
+	+r(1023)
+		margin-top: 65px
+	+r(639)
+		margin: 65px 50px 25px
+	+r(479)
+		margin: 65px 10px 25px
+	+r(400)
+		margin: 65px 10px 25px
+.slick-list
+	margin: 0 -15px
+	+r(1300)
+		margin: 0 -10px
+	+r(479)
+		margin: 0
+
+.slick-dots
+	left: 50%
+	transform: translate(-50%)
+	+r(1023)
+		bottom: -30px
+.slick-dots li button:before
+	width: 14px
+	height: 14px
+	background-color: #d5e4e2
+	border-radius: 50%
+	opacity: 1
+	cursor: pointer
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+.slick-dots li button:hover:before
+	background-color: #afc8c4
+.slick-dots li.slick-active button:before
+	width: 18px
+	height: 18px
+	background-color: #9fcc3a
+	opacity: 1
+.slick-dots li.slick-active button
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		top: -2.5px
+		left: 50%
+		transform: translateX(-50%)
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 0 4.5px 5px 4.5px
+		border-color: transparent transparent #9fcc3a transparent
+
+.content-plus .rev-box__body
+	max-height: 800px
+.content-plus .rev-box__plus:after
+	opacity: 0
+	transition: .5s
+.content-plus .rev-box__btn
+	background-color: #f3a525
+	box-shadow: 2px 2.2px 0 0 #ca8c0d
+.rev-box.slick-center
+		transform: translateY(-30px)
+		transition: 0.5s
+
 .popup__review
 	display: none
+	&.active
+		display: block
+		width: 100%
+		height: 100%
+		position: fixed
+		background-color: rgba(0, 0, 0, 0.6)
+		top: 0
+		left: 0
+		z-index: 50
+	.review__inner
+		text-align: center
+		width: 730px
+		height: 242px
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		border-radius: 3px
+		background-color: #e4f1ef;
+		background-image: url(../img/pattern-noise.png);
+		color: #444444
+		z-index: 11
+		padding: 10px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		+r(1023)
+			max-width: 540px
+			height: 170px
+		+r(560)
+			width: 300px
+			height: auto
+			padding-top: 20px
+			padding-bottom: 20px
+	.close
+		cursor: pointer
+		position: absolute
+		top: 15px
+		right: 15px
+		width: 28px
+		height: 28px
+		+r(560)
+			top: 5px
+			right: 5px
+		&:before, &:after
+			content: ''
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%) rotate(45deg)
+			height: 3px
+			width: 100%
+			background-color: #fc8a1c
+			border-radius: 50px
+		&:after
+			transform: translate(-50%, -50%) rotate(-45deg)
+	.review__title
+		color: #000000
+		font-size: 36px
+		font-weight: 700
+		line-height: 36px
+		+r(1023)
+			font-size: 28px
+			line-height: normal
+		+r(560)
+			font-size: 20px
+
+	.review__p
+		color: #666666
+		font-size: 20px
+		font-weight: 400
+		line-height: normal
+		margin-top: 17px
+		+r(1023)
+			font-size: 18px
+			margin-top: 12px
+		+r(560)
+			font-size: 16px
+			margin-top: 5px
+@media screen and (max-width: 1023px)
+	.reviews .answer__plus
+		top: 11px

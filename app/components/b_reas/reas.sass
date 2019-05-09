@@ -8,6 +8,7 @@
 		 br
 			 display: none
 	&-content
+		counter-reset: use-counter;
 		margin-top: 41px
 		display: flex
 		justify-content: space-between
@@ -22,6 +23,12 @@
 			justify-content: center
 	&-box
 		width: 31.63%
+		transition: 0.5s
+		&:hover
+			transform: scale(1.02)
+			transition: 1s
+			+r(1023)
+				transform: none
 		&:nth-child(1),&:nth-child(3)
 			position: relative
 			top: 70px
@@ -43,7 +50,8 @@
 		&__img
 			position: relative
 			&:before
-				content: '1'
+				counter-increment: use-counter
+				content: counter(use-counter)
 				position: absolute
 				bottom: -22px
 				left: 50%
@@ -140,18 +148,3 @@
 			+r(639)
 				font-size: 16px
 
-.item2
-	&:before
-		content: '2'
-.item3
-	&:before
-		content: '3'
-.item4
-	&:before
-		content: '4'
-.item5
-	&:before
-		content: '5'
-.item6
-	&:before
-		content: '6'
