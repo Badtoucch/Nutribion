@@ -138,11 +138,13 @@
   & span {
     position: relative;
     display: inline-block;
-    margin-top: 4px;
+    margin-top: 9px;
+    line-height: 1;
     transition: inherit;
+    border-bottom: 1px dotted #000;
   }
 
-  & span::after {
+/*   & span::after {
     content: "";
     position: absolute;
     bottom: 4px;
@@ -155,7 +157,7 @@
       rgba(255, 255, 255, 0) 1px
     );
     background-size: 3px 1px;
-  }
+  } */
 }
 
 .head__link:hover,
@@ -166,11 +168,12 @@
 
   & span {
     font-weight: 500;
+    border-color: $transparent;
   }
 
-  & span::after {
+  /* & span::after {
     opacity: 0;
-  }
+  } */
 }
 
 .head__middle {
@@ -358,8 +361,24 @@
   &--bottom {
     top: -121px;
 
+    & .head__person {
+      max-height: 678px;
+
+      @include r(1189) {
+        max-height: 600px;
+      }
+    }
+
+    & .head__pack-wrapper {
+      transform: translateY(40px);
+
+      @include r(1189) {
+        transform: translateY(65px);
+      }
+    }
+
     @include r(1189) {
-      top: 5px;
+      top: -37px;
     }
 
     @include r(1023) {

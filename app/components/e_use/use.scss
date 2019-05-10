@@ -1,7 +1,8 @@
 .use {
   margin-bottom: 28px;
   padding: 104px 0 0;
-  @include block-bg(45%, -23%, 45%, -23%);
+  // @include block-bg(45%, -23%, 45%, -23%);
+  @include block-bg(45%, -10%, 45%, -10%);
 
   @include r(1189) {
     padding: 60px 0 0;

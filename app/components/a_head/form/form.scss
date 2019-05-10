@@ -27,7 +27,8 @@
     width: 42px;
     height: 228px;
     background-image: url("../img/arrow-form.svg");
-    background-position: top left;
+    background-position: top right;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 
     @include rm(1250) {
