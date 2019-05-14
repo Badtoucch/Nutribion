@@ -339,10 +339,9 @@
 
 .head__pictures {
   position: absolute;
-  top: -15px;
+  bottom: -109px;
   left: 15.7%;
   width: 883px;
-
   @include r(1189) {
     width: 700px;
     top: 110px;
@@ -369,11 +368,14 @@
     }
 
     & .head__pack-wrapper {
-      transform: translateY(40px);
+      transform: translateY(-31px);
 
       @include r(1189) {
-        transform: translateY(65px);
-      }
+        transform: translateY(-50px);
+			}
+			@include r(1023) {
+				transform: translateY(0px);
+			}
     }
 
     @include r(1189) {
@@ -390,7 +392,7 @@
   width: 100%;
   max-height: 722px;
   overflow: hidden;
-
+	position: relative;
   & img {
     display: block;
   }
@@ -403,11 +405,11 @@
 .head__pack-wrapper {
   position: absolute;
   z-index: 1;
-  bottom: -65px;
+  bottom: -75px;
   right: 194px;
 
   @include r(1189) {
-    bottom: -30px;
+    bottom: -90px;
     right: 150px;
     transform: scale(0.9);
   }
