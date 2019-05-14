@@ -73,7 +73,7 @@
 
 .comp__card {
   width: 270px;
-  min-height: 606px;
+  min-height: 570px;
   margin: 0 auto;
   padding-top: 201px;
   background-color: #fff;
@@ -88,7 +88,7 @@
 
   @include r(1189) {
     width: 240px;
-    min-height: 460px;
+    min-height: 440px;
     padding-top: 125px;
     background-size: 100% 125px, auto;
   }
@@ -162,7 +162,7 @@
 
 .comp__text {
   position: relative;
-  padding: 27px 32px 5px;
+  padding: 27px 32px;
   color: #444444;
   font-size: 18px;
   border-top: 1px solid #e0e0e0;

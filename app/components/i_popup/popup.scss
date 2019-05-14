@@ -1,5 +1,6 @@
 .popup__inner {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   max-width: 770px;
   padding: 43px 25px 30px 13px;
@@ -74,17 +75,12 @@
 }
 
 .ever-popup__close {
-  top: 42px !important;
+  top: 10px !important;
   right: 10px !important;
   width: 30px !important;
   height: 30px !important;
   transform: rotate(45deg) !important;
   cursor: pointer !important;
-  
-  @include rm(1250) {
-    top: 51px !important;
-    right: 17px !important;
-  }
 
   &::before,
   &::after {
