@@ -85,7 +85,10 @@
     top: 51px !important;
     right: 17px !important;
   }
-
+	@include r(767){
+		top: 8px !important;
+  right: 7px !important;
+	}
   &::before,
   &::after {
     top: 50% !important;
