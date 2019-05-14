@@ -81,19 +81,6 @@
   height: 30px !important;
   transform: rotate(45deg) !important;
   cursor: pointer !important;
-<<<<<<< HEAD
-
-=======
-  
-  @include rm(1250) {
-    top: 51px !important;
-    right: 17px !important;
-  }
-	@include r(767){
-		top: 8px !important;
-  right: 7px !important;
-	}
->>>>>>> a47399d17a341ea07629751a10a327ae876b553a
   &::before,
   &::after {
     top: 50% !important;
