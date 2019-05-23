@@ -1,9 +1,9 @@
 .footer {
-  padding-top: 65px;
+  padding-top: 40px;
   padding-bottom: 25px;
 
   @include r(1189) {
-    padding-top: 45px;
+    padding-top: 35px;
   }
 
   @include r(1023) {
