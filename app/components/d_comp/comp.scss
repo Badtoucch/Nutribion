@@ -73,7 +73,7 @@
 
 .comp__card {
   width: 270px;
-  min-height: 570px;
+  min-height: 100%;
   margin: 0 auto;
   padding-top: 201px;
   background-color: #fff;
@@ -203,7 +203,10 @@
   @include r(1023) {
     flex-grow: 1;
     border-top: none;
-    border-left: 1px solid #e0e0e0;
+		border-left: 1px solid #e0e0e0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
   }
 }
 

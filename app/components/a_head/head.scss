@@ -15,7 +15,13 @@
 
     &::after {
       bottom: -2px;
-    }
+		}
+		.head__text{
+			margin-top: 32px;
+			@include r(1023) {
+				margin-top: 0;
+			}
+		}
   }
 
   @include r(1023) {
@@ -343,8 +349,8 @@
   left: 15.7%;
   width: 883px;
   @include r(1189) {
-    width: 700px;
-    top: 110px;
+		width: 700px;
+		bottom: -160px;
     left: 18%;
   }
 
@@ -354,24 +360,28 @@
     width: auto;
     margin-top: 20px;
   }
-
+	@include r(639){
+		margin-top: 0;
+	}
   
   &--bottom {
-    top: -121px;
-
+    bottom: 4px;
+		@include r(1189) {
+			bottom: 0;
+		}
     & .head__person {
       max-height: 678px;
-
+			bottom: -55px;
       @include r(1189) {
         max-height: 600px;
       }
     }
 
     & .head__pack-wrapper {
-      transform: translateY(-31px);
+      transform: translateY(65px);
 
       @include r(1189) {
-        transform: translateY(-50px);
+        transform: translateY(82px);
 			}
 			@include r(1023) {
 				transform: translateY(0px);
@@ -379,7 +389,7 @@
     }
 
     @include r(1189) {
-      top: -37px;
+
     }
 
     @include r(1023) {
@@ -409,7 +419,7 @@
   right: 194px;
 
   @include r(1189) {
-    bottom: -90px;
+    bottom: -45px;
     right: 150px;
     transform: scale(0.9);
   }

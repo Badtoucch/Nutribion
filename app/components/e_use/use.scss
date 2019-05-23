@@ -2,7 +2,7 @@
   margin-bottom: 28px;
   padding: 104px 0 0;
   // @include block-bg(45%, -23%, 45%, -23%);
-  @include block-bg(45%, -5%, 45%, -5%);
+  @include block-bg(45%, 3%, 45%, 3%);
 
   @include r(1189) {
     padding: 60px 0 0;
@@ -299,4 +299,14 @@
   @include r(1023) {
     position: static;
   }
+}
+@media (max-width: 767px){
+	.text-l{
+		text-align: left;
+		padding-left: 5px;
+	}
+	.text-r{
+		text-align: right;
+		padding-right: 5px;
+	}
 }
