@@ -99,15 +99,10 @@
   @include r(767) {
     display: flex;
     align-items: center;
-    max-width: 460px;
+    max-width: 400px;
     margin: 0 auto;
     font-size: 16px;
-  }
-
-  &--second {
-    @include r(767) {
-      flex-direction: row-reverse;
-    }
+    text-align: left;
   }
 }
 
@@ -123,16 +118,14 @@
   box-shadow: 3px 3px 0 0 #126c10;
 
   @include r(767) {
-    width: 120px;
-    height: 120px;
-    margin: 0 15px;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    margin-right: 20px;
+    border-width: 10px;
   }
 
   @include r(479) {
-    width: 90px;
-    height: 90px;
-    margin-right: 10px;
-    border-width: 10px;
   }
 
   &::before {
@@ -147,8 +140,18 @@
     font-size: 24px;
     font-weight: 900;
     line-height: 40px;
+    text-align: center;
     background-color: #fff;
     border-radius: 50%;
+
+    @include r(767) {
+      top: 50%;
+      left: 50%;
+      color: white;
+      font-size: 38px;
+      background: none;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &::after {
@@ -165,35 +168,8 @@
     @include r(767) {
       left: auto;
       top: 50%;
-      right: -21px;
-      transform: translateY(-50%) rotate(-45deg);
-    }
-
-    @include r(479) {
       right: -16px;
-    }
-  }
-  
-  &--second {
-    @include r(767) {
-      box-shadow: -3px 3px 0 0 #126c10;
-
-      &::before {
-        left: auto;
-        right: -21px;
-      }
-
-      &::after {
-        left: -21px;
-        right: auto;
-        transform: translateY(-50%) rotate(45deg);
-      }
-    }
-
-    @include r(479) {
-      &::after {
-        left: -16px;
-      }
+      transform: translateY(-50%) rotate(-45deg);
     }
   }
 }
@@ -201,52 +177,23 @@
 .use__img {
   position: absolute;
 
+  @include r(767) {
+    display: none;
+  }
+
   &--01 {
     top: 22px;
     right: 27px;
-    
-    @include r(767) {
-      top: 20px;
-      right: 20px;
-      max-width: 50%;
-    }
-    
-    @include r(479) {
-      top: 13px;
-      right: 15px;
-    }
   }
 
   &--02 {
     top: 25px;
     right: 30px;
-    
-    @include r(767) {
-      top: 22px;
-      right: 22px;
-      max-width: 50%;
-    }
-    
-    @include r(479) {
-      top: 15px;
-      right: 17px;
-    }
   }
 
   &--03 {
     top: 4px;
     right: 7px;
-    
-    @include r(767) {
-      top: 4px;
-      right: 7px;
-      max-width: 70%;
-    }
-    
-    @include r(479) {
-      top: 4px;
-      right: 4px;
-    }
   }
 }
 

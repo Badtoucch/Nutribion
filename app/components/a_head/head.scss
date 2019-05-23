@@ -34,6 +34,10 @@
   display: flex;
   justify-content: space-between;
 
+  @include r(1023) {
+    align-items: center;
+  }
+  
   @include r(767) {
     justify-content: center;
   }
@@ -46,6 +50,11 @@
   font-size: 17px;
   line-height: (18 / 17);
 
+  @include r(1023) {
+    height: 75px;
+    align-items: center;
+  }
+
   @include r(767) {
     align-items: center;
   }
@@ -53,7 +62,7 @@
   & img {
     flex-shrink: 0;
 
-    @include r(767) {
+    @include r(1023) {
       max-width: 100px;
     }
   }
@@ -63,7 +72,7 @@
     margin-top: 38px;
     margin-left: 19px;
 
-    @include r(767) {
+    @include r(1023) {
       margin-top: 0;
       margin-left: 10px;
     }
@@ -81,7 +90,7 @@
   }
 
   @include r(1023) {
-    margin-top: 27px;
+    margin: 0;
   }
 
   @include r(767) {

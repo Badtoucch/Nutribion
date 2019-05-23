@@ -1,6 +1,9 @@
 .order
 	padding-top: 0 !important
 	padding-bottom: 100px
+	&__title
+		+r(767)
+			margin-bottom: 15px
 	.odtxt
 		margin-top: 38px
 		+r(1023)
@@ -68,6 +71,10 @@
 				font-size: 180px
 			+r(1023)
 				font-size: 160px
+			+r(767)
+				font-size: 120px
+				margin-right: 25px
+				line-height: 95px
 			&:before
 				content: ''
 				position: absolute
@@ -85,6 +92,7 @@
 					width: 80px
 					height: 80px
 				+r(767)
+					left: 20px
 					width: 70px
 					height: 70px
 		&__text

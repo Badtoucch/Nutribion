@@ -1,3 +1,7 @@
+// 
+$line-height: (28 / 18)
+// 
+
 .rev
 	padding: 90px 0 100px
 	+r(1189)
@@ -19,35 +23,34 @@
 			font-size: 18px
 			margin-bottom: 0
 	&-content
-		margin-top: 40px
-		+r(1300)
+		// margin-top: 40px
+		margin-top: 10px
+		+r(1299)
 			max-width: 1006px
 			margin-right: auto
 			margin-left: auto
 		+r(1189)
-			margin-top: 30px
+			// margin-top: 30px
 			max-width: 900px
 		+r(1023)
-			margin-top: 0px
+			// margin-top: 0px
 			max-width: 100%
 		+r(479)
 			max-width: 320px
 		+r(400)
 			max-width: 300px
 	&-box
-		display: flex
-		flex-direction: column
-		align-items: center
 		box-shadow: 0 0 15px rgba(84, 84, 84, 0.2)
 		border-radius: 5px
 		background-color: #ffffff
 		border-top: 3px solid #fb9a01
 		padding-bottom: 40px
 		position: relative
-		margin-bottom: 100px
+		margin: 0 auto 100px
 		width: 370px
+		// min-height: 610px
 		transition: 0.5s
-		+r(1300)
+		+r(1299)
 			width: 320px
 			box-shadow: 0 0 10px rgba(84, 84, 84, 0.2)
 		+r(1189)
@@ -99,16 +102,21 @@
 			+r(1023)
 				font-size: 17px
 		&__thesis
+			display: flex
+			align-items: center
+			$line-height: (28 / 22)
 			color: #000000
 			font-size: 22px
 			font-weight: 500
-			line-height: 28px
+			line-height: $line-height + em
 			text-align: center
-			margin-top: 24px
+			min-height: ($line-height * 2) + em
+			margin: 24px auto 0
 			padding: 0 20px
+			+r(1299)
+				min-height: ($line-height * 3) + em
 			+r(1189)
 				font-size: 19px
-				line-height: normal
 				margin-top: 20px
 			+r(1023)
 				font-size: 18px
@@ -117,15 +125,17 @@
 			color: #444444
 			font-size: 18px
 			font-weight: 400
-			line-height: 28px
+			line-height: $line-height
 			text-align: center
 			padding: 0 33px
 			margin-top: 10px
-			+r(1300)
+			max-height: ($line-height * 10) + em
+			transition: all 0.2s
+			overflow: hidden
+			+r(1299)
 				padding: 0 20px
 			+r(1189)
 				padding: 0 14px
-				line-height: normal
 				font-size: 18px
 			+r(1023)
 				font-size: 17px
@@ -133,13 +143,9 @@
 				br
 					display: none
 		&__body
-			max-height: 337px
-			overflow: hidden
-			transition: .5s
-			+r(1189)
-				max-height: 318px
-			+r(1023)
-				max-height: 240px
+			width: 100%
+			display: flex
+			flex-wrap: wrap
 		&__btn
 			position: absolute
 			bottom: -18.5px
@@ -151,6 +157,7 @@
 			border-radius: 50%
 			box-shadow: 2px 2.2px 0 0 #6ba423
 			transition: .5s
+			padding: 0
 			&:hover
 				background-color: #8ab629
 				box-shadow: 2px 2.2px 0 0 #5a8d1a
@@ -318,7 +325,7 @@
 	fill: #bed9d5
 	+r(1350)
 		left: -60px
-	+r(1300)
+	+r(1299)
 		left: 15px
 	+r(1189)
 		left: -4px
@@ -337,7 +344,7 @@
 	fill: #bed9d5
 	+r(1350)
 		right: -60px
-	+r(1300)
+	+r(1299)
 		right: 15px
 	+r(1189)
 		right: -4px
@@ -355,7 +362,7 @@
 .slick-slide
 	outline: 0
 	margin: 80px 15px 25px
-	+r(1300)
+	+r(1299)
 		margin: 80px 10px 25px
 	+r(1023)
 		margin-top: 65px
@@ -367,7 +374,7 @@
 		margin: 65px 10px 25px
 .slick-list
 	margin: 0 -15px
-	+r(1300)
+	+r(1299)
 		margin: 0 -10px
 	+r(479)
 		margin: 0
@@ -409,17 +416,18 @@
 		border-width: 0 4.5px 5px 4.5px
 		border-color: transparent transparent #9fcc3a transparent
 
-.content-plus .rev-box__body
-	max-height: 800px
+.content-plus .rev-box__text
+	max-height: ($line-height * 30) + em
+	transition: all 0.6s
 .content-plus .rev-box__plus:after
 	opacity: 0
 	transition: .5s
 .content-plus .rev-box__btn
 	background-color: #f3a525
 	box-shadow: 2px 2.2px 0 0 #ca8c0d
-.rev-box.slick-center
-		transform: translateY(-30px)
-		transition: 0.5s
+// .rev-box.slick-center
+// 		transform: translateY(-30px)
+// 		transition: 0.5s
 
 .popup__review
 	display: none
